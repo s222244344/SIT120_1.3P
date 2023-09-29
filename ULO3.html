@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="ULO3.css">
+    </head>
+<header>
+    <table style="width: 100%;">
+        <tr>
+            <td style="margin-left: 5px; font-size: 50px; padding-right: 20px;">
+                <a href="portfolio.html">My Learning Journey</a>
+            </td>
+            <td
+                style="text-align: right; margin-right: 30px; font-size: 50px; padding-left: 20px; padding-right: 20px;">
+                <a href="ULO1.html">ULO1&2</a>
+            </td>
+
+
+            <td style="text-align: right; font-size: 50px; padding-left: 20px; padding-right: 20px;">
+                <a href="ULO3.html">ULO3</a>
+            </td>
+
+
+            <td style="text-align: right; font-size: 50px; padding-left: 20px;">
+                <a href="ULO4.html">ULO4</a>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<body>
+
+    <head>
+    </head>
+    <div id="table-container">
+        <table style="margin-top: 260px ; width: 80%;">
+            <tr>
+                <th style="font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 300;">
+                    ULO3
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size: 50px;">Click on the box for ULO3 Journey</p>
+                    <div id="app" style="background-color: burlywood; font-size: 30px;">
+                        <div v-on:click="changeText">
+                            {{ text }}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <p>Have I personally achieved ULO 3 </p>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Yes</p><input type="radio" v-model="rdio" value="Yes"
+                        :style="{ color: rdio === 'Yes' ? 'green' : '' }">
+                    <p>No</p> <input type="radio" v-model="rdio" value="No" disabled
+                        :style="{ color: rdio === 'No' ? 'red' : '' }">
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    text: 'The third Learning outcome is achieved through the credit tasks which were complted throughout this unit, the credit tasks allowed us to practise and learn about a subset of Javascript called Vue, furthermore the second learning outcome is acheived through tasks where JavaScript was needed and executed such as the second pass task. Elements of Vue which I have learnt whilst completing those tasks are embedded within this website! ',
+
+                };
+            },
+            methods: {
+                changeText() {
+                    this.text = 'Thankyou for viewing!';
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="ULO1.css">
+    </head>
+
+<header>
+    <table style="width: 100%;">
+        <tr>
+            <td style="margin-left: 5px; font-size: 50px; padding-right: 20px;">
+                <a href="portfolio.html">My Learning Journey</a>
+            </td>
+            <td
+                style="text-align: right; margin-right: 30px; font-size: 50px; padding-left: 20px; padding-right: 20px;">
+                <a href="ULO1.html">ULO1&2</a>
+            </td>
+
+
+            <td style="text-align: right; font-size: 50px; padding-left: 20px; padding-right: 20px;">
+                <a href="ULO3.html">ULO3</a>
+            </td>
+
+
+            <td style="text-align: right; font-size: 50px; padding-left: 20px;">
+                <a href="ULO4.html">ULO4</a>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<body>
+
+    <head>
+    </head>
+    <div id="table-container">
+        <table style="margin-top: 260px ; width: 80%;">
+            <tr>
+                <th style="font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 300;">
+                    ULO1 and ULO2
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size: 50px;">Click on the box for ULO1 Journey</p>
+                    <div id="app" style="background-color: burlywood; font-size: 30px;">
+                        <div v-on:click="changeText">
+                            {{ text }}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <p>Have I personally achieved ULO 1 & ULO 2 </p>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Yes</p><input type="radio" v-model="rdio" value="Yes"
+                        :style="{ color: rdio === 'Yes' ? 'green' : '' }">
+                    <p>No</p> <input type="radio" v-model="rdio" value="No" disabled
+                        :style="{ color: rdio === 'No' ? 'red' : '' }">
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    text: 'The first learning outcome was very interesting for me, as I developed skills and knowledge of web infrastructure to understand the concepts of web development. This included using tags and basic elements of HTML to create web designs. I displayed these skills in the first tasks by creating a website using HTML tags like tables and inserting images. Understanding the basic structures and HTML tags enhanced our abilities in creating websites. ULO 1 and 2 both relate to the creation of the first website, where we enhanced our web design skills to create responsive web design concepts and professional plans.',
+
+                };
+            },
+            methods: {
+                changeText() {
+                    this.text = 'Thankyou for viewing!';
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
+</body>
+
+
+
+</html>

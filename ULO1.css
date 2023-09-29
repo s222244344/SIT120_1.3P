@@ -1,0 +1,73 @@
+
+    #app>div {
+        width: 800px;
+        padding: 20px;
+        border: dashed black 1px;
+        margin-top: 150px;
+        align-items: center;
+    }
+
+    #app {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /* Change align-items to flex-start */
+        height: 100vh;
+        margin: 0;
+        /* Remove margin-top and margin-right */
+        padding: 5px;
+        /* Add padding instead of margin-top for spacing */
+    }
+
+    .classbind {
+        background-color: aqua;
+    }
+
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+
+    body {
+        background-color: rgb(228, 205, 173);
+    }
+
+    h1 {
+        font-family: cursive;
+        font-size: 35px;
+        /* border-radius: 0cqb; Note: '0cqb' might be a typo, consider using a valid value like '5px' for border-radius */
+        margin-left: 43%;
+        margin-top: 5%;
+    }
+
+    header {
+        font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+        font-size: 60px;
+        background-color: aliceblue;
+
+    }
+
+    #table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    input[type="radio"][value="Yes"] {
+        color: green;
+    }
+
+    input[type="radio"][value="No"] {
+        color: red;
+    }

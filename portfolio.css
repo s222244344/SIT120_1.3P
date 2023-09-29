@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(228, 205, 173);
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 35px;
+    /* border-radius: 0cqb; Note: '0cqb' might be a typo, consider using a valid value like '5px' for border-radius */
+    margin-left: 43%;
+    margin-top: 5%;
+}
+
+header{
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    background-color: aliceblue;
+    
+}
+
+body {
+    background-color: rgb(228, 205, 173);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.grid-item {
+    width: 100%;
+    padding: 20px;
+    border: dashed black 1px;
+    background-color: burlywood;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
